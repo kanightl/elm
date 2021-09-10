@@ -8,6 +8,9 @@ public class DeliveryAddress {
     private String address;
     private String userId;
 
+    public DeliveryAddress() {
+    }
+
     public DeliveryAddress(Integer daId, String contactName, Integer contactSex, String contactTel, String address, String userId) {
         this.daId = daId;
         this.contactName = contactName;
