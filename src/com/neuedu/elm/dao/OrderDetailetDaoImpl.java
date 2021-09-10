@@ -18,11 +18,11 @@ public class OrderDetailetDaoImpl implements OrderDetailetDao {
     @Override
     public int saveOrderDetailetBatch(List<OrderDetailet> list) throws Exception {
         int i = 0;
-        StringBuffer stringBuffer = new StringBuffer("insert into elm_orderDetailet(order_id,food_id,quantity) values");
+        StringBuffer stringBuffer = new StringBuffer("insert into elm_orderdetailet(order_id,food_id,quantity) values ");
         for(OrderDetailet od : list) {
             stringBuffer.append("("+od.getOrderId()+","+od.getFoodId()+","+od.getQuantity()+")");
         }
-        String sql = stringBuffer.toString().substring(0,stringBuffer.toString().length()-1);
+        String sql = stringBuffer.toString();
         System.out.println(sql);
         try {
             conn = DBUtil.getConnection();
@@ -42,7 +42,7 @@ public class OrderDetailetDaoImpl implements OrderDetailetDao {
         sql.append("        f.food_id ffood_id, ");
         sql.append("        f.food_name ffood_name, ");
         sql.append("        f.food_price ffood_price ");
-        sql.append(" from elm_orderDetailet o left join elm_food f on o.food_id=f.food_id ");
+        sql.append(" from elm_orderdetailet o left join elm_food f on o.food_id=f.food_id ");
         sql.append(" where o.order_id=? ");
         try {
             conn = DBUtil.getConnection();

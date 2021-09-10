@@ -11,6 +11,7 @@ import java.util.List;
 public class OrderDetailetController {
     private OrderDetailetService service = new OrderDetailetServiceImpl();
 
+    // http://localhost:8890/elm/OrderDetailetController/listOrderDetailetByOrderId?orderId=5
     public Object listOrderDetailetByOrderId(HttpServletRequest req, HttpServletResponse resp) throws Exception{
         Integer orderId = Integer.valueOf(req.getParameter("orderId"));
         List<OrderDetailet> list = service.listOrderDetailetByOrderId(orderId);

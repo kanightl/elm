@@ -19,7 +19,7 @@ public class OrdersDaoImpl implements OrdersDao {
     @Override
     public int saveOrders(Orders o) throws Exception {
         int i = 0;
-        String sql = "insert into orders values(null,?,?,?,?,?,0)";
+        String sql = "insert into elm_orders values(null,?,?,?,?,?,0)";
         try {
             conn = DBUtil.getConnection();
             //设置返回自增长列值
@@ -48,7 +48,7 @@ public class OrdersDaoImpl implements OrdersDao {
         StringBuffer sql = new StringBuffer();
         sql.append(" select o.*, ");
         sql.append("        b.business_id bbusiness_id, ");
-        sql.append("        b.business_name bbusiness_iame, ");
+        sql.append("        b.business_name bbusiness_name, ");
         sql.append("        b.delivery_price bdelivery_price ");
         sql.append(" from elm_orders o left join elm_business b on o.business_id=b.business_id ");
         sql.append(" where o.order_id=? ");
