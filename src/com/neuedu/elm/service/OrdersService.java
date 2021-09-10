@@ -5,7 +5,7 @@ import com.neuedu.elm.entity.Orders;
 import java.util.List;
 
 public interface OrdersService {
-    public int saveOrders(Orders o) ;
-    public Orders getOrdersById(Integer orderId) ;
-    public List<Orders> listOrdersById(String userId) ;
+    public int createOrders(String userId,Integer businessId,Integer daId);
+    public Orders getOrdersById(Integer orderId);
+    public List<Orders> listOrdersByUserId(String userId);
 }
