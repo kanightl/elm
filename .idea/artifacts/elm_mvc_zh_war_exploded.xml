@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="elm_mvc_zh:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/elm_mvc_zh_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="elm_mvc_zh/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="elm_mvc_zh" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
