@@ -69,7 +69,7 @@ public class CartDaoImpl implements CartDao {
                 f.setRemarks(rs.getString("f_remarks"));
                 c.setFood(f);
                 Business b = new Business();
-                b.setBussinessId(rs.getInt("bb_id"));
+                b.setBusinessId(rs.getInt("bb_id"));
                 b.setBusinessName(rs.getString("bb_name"));
                 b.setBusinessAddress(rs.getString("bb_address"));
                 b.setBusinessExplain(rs.getString("bb_explain"));

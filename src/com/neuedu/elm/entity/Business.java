@@ -1,7 +1,7 @@
 package com.neuedu.elm.entity;
 
 public class Business {
-    private Integer bussinessId;
+    private Integer businessId;
     private String businessName;
     private String businessAddress;
     private String businessExplain;
@@ -14,8 +14,8 @@ public class Business {
     public Business() {
     }
 
-    public Business(Integer bussinessId, String businessName, String businessAddress, String businessExplain, String businessImg, Integer orderTypeId, Double starPrice, Double deliveryPrice, String remarks) {
-        this.bussinessId = bussinessId;
+    public Business(Integer businessId, String businessName, String businessAddress, String businessExplain, String businessImg, Integer orderTypeId, Double starPrice, Double deliveryPrice, String remarks) {
+        this.businessId = businessId;
         this.businessName = businessName;
         this.businessAddress = businessAddress;
         this.businessExplain = businessExplain;
@@ -26,12 +26,12 @@ public class Business {
         this.remarks = remarks;
     }
 
-    public Integer getBussinessId() {
-        return bussinessId;
+    public Integer getBusinessId() {
+        return businessId;
     }
 
-    public void setBussinessId(Integer bussinessId) {
-        this.bussinessId = bussinessId;
+    public void setBusinessId(Integer businessId) {
+        this.businessId = businessId;
     }
 
     public String getBusinessName() {
@@ -101,7 +101,7 @@ public class Business {
     @Override
     public String toString() {
         return "Business{" +
-                "bussinessId=" + bussinessId +
+                "bussinessId=" + businessId +
                 ", businessName='" + businessName + '\'' +
                 ", businessAddress='" + businessAddress + '\'' +
                 ", businessExplain='" + businessExplain + '\'' +

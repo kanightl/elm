@@ -41,10 +41,10 @@ public class CartController {
 
     }
 
-    //http://localhost:8890/elm/CartController/removeCart?cartId=1&businessId=1&userId=tom01
+    //http://localhost:8890/elm/CartController/removeCart?foodId=1&businessId=1&userId=tom01
     public Object removeCart(HttpServletRequest req, HttpServletResponse response) throws Exception{
         Cart c=new Cart();
-        c.setCartId(Integer.valueOf(req.getParameter("cartId")));
+        c.setFoodId(Integer.valueOf(req.getParameter("foodId")));
         c.setBusinessId(Integer.valueOf(req.getParameter("businessId")));
         c.setUserId(req.getParameter("userId"));
         int i=service.removeCart(c);

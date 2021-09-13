@@ -25,7 +25,7 @@ public class BusinessDaoImpl implements BusinessDao {
             rs = st.executeQuery();
             while (rs.next()) {
                 Business b = new Business();
-                b.setBussinessId(rs.getInt("business_id"));
+                b.setBusinessId(rs.getInt("business_id"));
                 b.setBusinessName(rs.getString("business_name"));
                 b.setBusinessAddress(rs.getString("business_address"));
                 b.setBusinessExplain(rs.getString("business_explain"));
@@ -52,7 +52,7 @@ public class BusinessDaoImpl implements BusinessDao {
             rs = st.executeQuery();
             while (rs.next()) {
                 b = new Business();
-                b.setBussinessId(rs.getInt("business_id"));
+                b.setBusinessId(rs.getInt("business_id"));
                 b.setBusinessName(rs.getString("business_name"));
                 b.setBusinessAddress(rs.getString("business_address"));
                 b.setBusinessExplain(rs.getString("business_explain"));
@@ -81,7 +81,7 @@ public class BusinessDaoImpl implements BusinessDao {
             rs = st.executeQuery();
             while (rs.next()) {
                 Business b = new Business();
-                b.setBussinessId(rs.getInt("business_id"));
+                b.setBusinessId(rs.getInt("business_id"));
                 b.setBusinessName(rs.getString("business_name"));
                 b.setBusinessAddress(rs.getString("business_address"));
                 b.setBusinessExplain(rs.getString("business_explain"));

@@ -67,7 +67,7 @@ public class OrdersDaoImpl implements OrdersDao {
                 o.setOrderTotal(rs.getDouble("order_total"));
                 o.setOrderState(rs.getInt("order_state"));
                 Business business = new Business();
-                business.setBussinessId(rs.getInt("bbusiness_id"));
+                business.setBusinessId(rs.getInt("bbusiness_id"));
                 business.setBusinessName(rs.getString("bbusiness_name"));
                 business.setDeliveryPrice(rs.getDouble("bdelivery_price"));
                 o.setBusiness(business);
@@ -105,7 +105,7 @@ public class OrdersDaoImpl implements OrdersDao {
                 o.setDaId(rs.getInt("da_id"));
                 o.setOrderState(rs.getInt("order_state"));
                 Business business = new Business();
-                business.setBussinessId(rs.getInt("bbusinessId"));
+                business.setBusinessId(rs.getInt("bbusinessId"));
                 business.setBusinessName(rs.getString("bbusinessName"));
                 business.setDeliveryPrice(rs.getDouble("bdeliveryPrice"));
                 o.setBusiness(business);
